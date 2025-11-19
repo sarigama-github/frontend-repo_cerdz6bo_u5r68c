@@ -29,14 +29,24 @@ export default function About() {
               ))}
             </div>
           </motion.div>
+
+          {/* Visual collage showcasing different aspects of IT Vision */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="rounded-2xl overflow-hidden border border-slate-200"
+            className="grid grid-cols-2 gap-4"
           >
-            <ImageWithFallback src="/images/banner-placeholder.jpg" alt="About banner" className="w-full h-full object-cover" />
+            <div className="col-span-2 h-48 sm:h-56 lg:h-64 rounded-2xl overflow-hidden border border-slate-200">
+              <ImageWithFallback src="/images/service1.jpg" alt="Modern web development" className="w-full h-full object-cover" />
+            </div>
+            <div className="h-40 sm:h-48 rounded-2xl overflow-hidden border border-slate-200">
+              <ImageWithFallback src="/images/work2.jpg" alt="Cloud and DevOps solutions" className="w-full h-full object-cover" />
+            </div>
+            <div className="h-40 sm:h-48 rounded-2xl overflow-hidden border border-slate-200">
+              <ImageWithFallback src="/images/service3.jpg" alt="AI and data intelligence" className="w-full h-full object-cover" />
+            </div>
           </motion.div>
         </div>
       </div>

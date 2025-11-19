@@ -5,8 +5,8 @@ const services = [
   { title: 'Web Development', desc: 'Modern, responsive websites and web apps built with performance and accessibility in mind.', img: '/images/service1.jpg' },
   { title: 'Mobile Apps', desc: 'Cross-platform mobile applications delivering seamless experiences.', img: '/images/service2.jpg' },
   { title: 'Cloud Solutions', desc: 'Scalable cloud architecture, DevOps, and cost optimization.', img: '/images/service3.jpg' },
-  { title: 'Cybersecurity', desc: 'Security assessments, SOC hardening, compliance and threat monitoring.', img: '/images/service2.jpg' },
-  { title: 'AI Solutions', desc: 'Intelligent automation, data pipelines, and custom AI models.', img: '/images/service3.jpg' },
+  { title: 'Cybersecurity', desc: 'Security assessments, SOC hardening, compliance and threat monitoring.', img: '/images/work1.jpg' },
+  { title: 'AI Solutions', desc: 'Intelligent automation, data pipelines, and custom AI models.', img: '/images/work2.jpg' },
 ];
 
 export default function Services() {
