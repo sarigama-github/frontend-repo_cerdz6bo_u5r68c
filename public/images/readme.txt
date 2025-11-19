@@ -1,0 +1,12 @@
+Place your brand assets here. Replace the placeholder images referenced in the site:
+- /images/logo-placeholder.png
+- /images/banner-placeholder.jpg
+- /images/team1.jpg
+- /images/team2.jpg
+- /images/team3.jpg
+- /images/service1.jpg
+- /images/service2.jpg
+- /images/service3.jpg
+- /images/work1.jpg
+- /images/work2.jpg
+- /images/work3.jpg
