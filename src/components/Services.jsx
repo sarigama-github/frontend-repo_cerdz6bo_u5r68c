@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import ImageWithFallback from './ImageWithFallback';
 
 const services = [
   { title: 'Web Development', desc: 'Modern, responsive websites and web apps built with performance and accessibility in mind.', img: '/images/service1.jpg' },
@@ -27,7 +28,7 @@ export default function Services() {
               className="group rounded-2xl overflow-hidden border border-slate-200 bg-white hover:shadow-lg transition-shadow"
             >
               <div className="h-44 w-full overflow-hidden">
-                <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <ImageWithFallback src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <h3 className="font-semibold text-slate-900 text-lg">{s.title}</h3>

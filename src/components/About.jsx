@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import ImageWithFallback from './ImageWithFallback';
 
 export default function About() {
   return (
@@ -35,7 +36,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="rounded-2xl overflow-hidden border border-slate-200"
           >
-            <img src="/images/banner-placeholder.jpg" alt="About banner" className="w-full h-full object-cover" />
+            <ImageWithFallback src="/images/banner-placeholder.jpg" alt="About banner" className="w-full h-full object-cover" />
           </motion.div>
         </div>
       </div>

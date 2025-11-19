@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import ImageWithFallback from './ImageWithFallback';
 
 const team = [
   { name: 'Aarav Sharma', role: 'CEO & Founder', img: '/images/team1.jpg' },
@@ -25,7 +26,7 @@ export default function Team() {
               className="rounded-2xl overflow-hidden border border-slate-200 bg-white text-center p-6 hover:shadow-lg transition-shadow"
             >
               <div className="h-40 w-40 mx-auto rounded-full overflow-hidden">
-                <img src={m.img} alt={m.name} className="w-full h-full object-cover" />
+                <ImageWithFallback src={m.img} alt={m.name} className="w-full h-full object-cover" />
               </div>
               <div className="mt-4">
                 <div className="font-semibold text-slate-900">{m.name}</div>

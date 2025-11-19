@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
+import ImageWithFallback from './ImageWithFallback';
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -27,8 +28,11 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'} fixed top-0 left-0 right-0 z-50 transition-all`}>\n      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\n        <div className="flex items-center justify-between h-16">\n          <div className="flex items-center gap-3">
-            <img src="/images/logo-placeholder.png" alt="Global IT Vision Logo" className="h-9 w-auto" />
+    <header className={`${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'} fixed top-0 left-0 right-0 z-50 transition-all`}>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center gap-3">
+            <ImageWithFallback src="/images/logo-placeholder.png" alt="Global IT Vision Logo" className="h-9 w-auto" />
             <span className="font-semibold text-slate-800">Global IT Vision Pvt Ltd</span>
           </div>
           <div className="hidden md:flex items-center gap-6">

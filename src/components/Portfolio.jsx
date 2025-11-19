@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import ImageWithFallback from './ImageWithFallback';
 
 const works = [
   { title: 'E‑Commerce Platform', img: '/images/work1.jpg' },
@@ -25,7 +26,7 @@ export default function Portfolio() {
               className="rounded-2xl overflow-hidden border border-slate-200 bg-white hover:shadow-lg transition-shadow"
             >
               <div className="h-56 w-full overflow-hidden">
-                <img src={w.img} alt={w.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <ImageWithFallback src={w.img} alt={w.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <h3 className="font-semibold text-slate-900 text-lg">{w.title}</h3>
